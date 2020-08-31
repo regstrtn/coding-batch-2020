@@ -29,6 +29,7 @@ int main()
         getline(cin, inputstring);
         totalchars += inputstring.size();
         totaltime += time(NULL) - begin_time;
+        infile.close();
     }
     
     cout<<"Total characters: "<<totalchars<<"\n";
