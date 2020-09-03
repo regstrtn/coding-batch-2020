@@ -7,6 +7,12 @@ using namespace std;
 
 string randlines[5];
 
+/*
+ * Assumptions:
+ * 1. The lines entered by the user are the same as printed, without any errors.
+ * 2. Penalty of 1 sec for each character missed
+ */
+
 void get_rand_lines(){
 	string lines[2000];
 	int randnum,no_of_lines;
@@ -26,19 +32,25 @@ void get_rand_lines(){
 }
 
 void test_speed(){
-	int charcount=0,typedcount=0,linelen=0,t0,t1;
+	int charcount=0,typedcount=0,linelen=0,t0,t1,penalty=0;
 	string line,temp;
+
+	// Printing out lines and recording characters typed and time taken by the user
 	t0 = time(NULL);
 	for(int i=0;i<5;i++){
 		cout << randlines[i]+'\n';
-		charcount += randlines[i].size(); 
+		linelen = randlines[i].size(); 
+		charcount += linelen;
 		getline(cin,line); 
 		typedcount += line.size();
 		cout << endl;
+		if(linelen > line.size()) penalty += linelen-line.size();
 	}
 	t1 = time(NULL);
+
+	// Printing out characters entered and characters per minute
 	cout << "Characters entered: " << charcount << endl;
-	cout << "Characters per minute: " << (charcount*60)/(t1-t0) << endl;
+	cout << "Characters per minute: " << (charcount*60)/(t1-t0+penalty) << endl;
 }
 
 int main(){
