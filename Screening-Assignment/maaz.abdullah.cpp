@@ -24,6 +24,8 @@ int main()
 
     string messageVar;
     long long int sum = 0;
+    time_t begin, end;
+    time(&begin);
     for (int i = 0; i < 5; i++)
     {
 
@@ -33,13 +35,16 @@ int main()
         //fetch the line where line index (starting from 0) matches with the random number
 
         cout << "Line to type: " << lines[random_number] << endl;
-        cout << "Type your message: " << endl;
+        cout << "Type your line: " << endl;
         getline(cin, messageVar);
         cout << "You typed: " << messageVar << endl;
         sum = sum + messageVar.size();
         cout << endl;
     }
-    cout << "Total Character Typed: " << sum;
-
+    time(&end);
+    time_t timetaken = end - begin;
+    cout << "Total Character Typed: " << sum << endl;
+    cout << "Time of typing character: " << timetaken << " seconds" << endl;
+    cout << "Speed of typing character: " << std::setprecision(2) << (double)sum / timetaken << " character/second" << endl;
     return 0;
 }
