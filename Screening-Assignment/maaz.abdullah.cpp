@@ -22,28 +22,24 @@ int main()
         lines.push_back(line);
     }
 
+    string messageVar;
+    long long int sum = 0;
     for (int i = 0; i < 5; i++)
     {
 
-        //generate a random number between 0 and count of total lines
+        //generate a random number betfirnween 0 and count of total lines
         int random_number = rand() % total_lines;
 
         //fetch the line where line index (starting from 0) matches with the random number
 
-        cout << lines[random_number] << endl;
-    }
-
-    int t = 5;
-    string messageVar;
-    cout << "Type your message: " << endl;
-    ;
-    //istream& ignore (streamsize n = 0, int delim = EOF);
-    while (t--)
-    {
-
+        cout << "Line to type: " << lines[random_number] << endl;
+        cout << "Type your message: " << endl;
         getline(cin, messageVar);
         cout << "You typed: " << messageVar << endl;
-        cout << messageVar.size() << endl;
+        sum = sum + messageVar.size();
+        cout << endl;
     }
+    cout << "Total Character Typed: " << sum;
+
     return 0;
 }
