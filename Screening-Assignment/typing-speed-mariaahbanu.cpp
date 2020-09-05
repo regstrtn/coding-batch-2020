@@ -38,5 +38,6 @@ int main(){
     cout<<endl<<endl<<"----------------Result----------------";
     cout<<endl<<"You typed "<<charTyped<<" characters in "<<elapsed<<" seconds!";
     cout<<endl<<"Your typing speed is "<<speed<<" WPM."<<endl;
+    
 }
 
