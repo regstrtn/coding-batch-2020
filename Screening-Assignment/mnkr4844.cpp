@@ -35,6 +35,6 @@ time_t elapsed = end - begin;
 double typespeed = total_length/elapsed;
 cout <<"Time Taken :"<<elapsed <<"s"<< endl;
 cout<<"Number of characters typed:"<<total_length<<endl;
-cout<<"Number of characters typed per minute:"<<typespeed<<endl;
+cout<<"Number of characters typed per minute:"<<typespeed*60<<endl;
 
 }
