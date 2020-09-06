@@ -27,7 +27,7 @@ int main(){
 	while(turn--){
 		string inString;
 		int index = rand()%size;
-		cout<<data[turn]<<endl;
+		cout<<data[index]<<endl;
 		getline(cin, inString);
 		charCount += inString.length();
 	}
