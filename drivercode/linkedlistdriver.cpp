@@ -5,7 +5,7 @@
 #include <string> 
 #include <vector>
 
-use namespace std;
+using namespace std;
 
 // Linkedlist node
 class Node {
