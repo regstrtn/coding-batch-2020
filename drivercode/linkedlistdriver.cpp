@@ -49,6 +49,10 @@ Node *deleteNode (Node * head, int position) {
  return head; 
 }
 
+Node *deleteKthNodeFromEnd(Node * head, int k) {
+  return head; 
+}
+
 
 // Compare linkedlists. 
 bool areEqual(Node *head1, Node * head2) {
