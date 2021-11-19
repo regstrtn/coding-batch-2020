@@ -19,6 +19,10 @@ vector<int> generateRandomArray(int size) {
   return vector<int>(size); 
 }
 
+int height(TreeNode * root) {
+  return 0; 
+}
+
 void printTraversals(TreeNode * root) {
   // print inorder
   // print preorder
