@@ -38,8 +38,8 @@ Node * convertArrayToLinkedList(vector<int> & v) {
   return new Node(); 
 }
 
-// Insert into a linked list. 
-Node * insertNode (Node * head, int val) {
+// Insert into a linked list at given position. Position = 1 means insert before head. 
+Node * insertNode (Node * head, int val, int position) {
   return head; 
 }
 
@@ -49,15 +49,18 @@ Node *deleteNode (Node * head, int position) {
  return head; 
 }
 
-Node *deleteKthNodeFromEnd(Node * head, int k) {
-  return head; 
-}
-
 
 // Compare linkedlists. 
 bool areEqual(Node *head1, Node * head2) {
   return true; 
 }
+
+// K = 1 means delete last node. 
+Node *deleteKthNodeFromEnd(Node * head, int k) {
+  return head; 
+}
+
+
 
 // Reverse a linkedlist. 
 Node * reverseList(Node *head) {
