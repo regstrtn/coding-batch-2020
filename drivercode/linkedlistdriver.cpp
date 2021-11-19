@@ -32,9 +32,15 @@ Node * convertArrayToLinkedList(vector<int> & v) {
 }
 
 // Insert into a linked list. 
+Node * insertNode (Node * head, int val) {
+  return head; 
+}
 
 
 // Delete from a linked list. 
+Node *deleteNode (Node * head, int position) {
+ return head; 
+}
 
 
 // Compare linkedlists. 
@@ -44,11 +50,12 @@ bool areEqual(Node *head1, Node * head2) {
 
 // Reverse a linkedlist. 
 Node * reverseList(Node *head) {
+  return head; 
 }
 
 // Merge sorted lists. 
 Node * mergeSortedLists(Node * head1, Node * head2) {
-
+return head1; 
 }
 
 int main() {
