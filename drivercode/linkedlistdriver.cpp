@@ -14,14 +14,21 @@ class Node {
   Node * next; 
 }
 
-// Convert array to linkedlist
-Node * convertArrayToLinkedList(vector<int> & v) {
-  return new Node(); 
+
+// Print linked list 
+void printList(Node *head) {
 }
+
 
 // Return an array of random integers of the given size. 
 vector<int> generateRandomArray(int size) {
   return vector<int>(); 
+}
+
+
+// Convert array to linkedlist
+Node * convertArrayToLinkedList(vector<int> & v) {
+  return new Node(); 
 }
 
 // Insert into a linked list. 
@@ -35,6 +42,14 @@ bool areEqual(Node *head1, Node * head2) {
   return true; 
 }
 
+// Reverse a linkedlist. 
+Node * reverseList(Node *head) {
+}
+
+// Merge sorted lists. 
+Node * mergeSortedLists(Node * head1, Node * head2) {
+
+}
 
 int main() {
   // 1. Get a random array. 
