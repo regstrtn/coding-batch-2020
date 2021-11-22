@@ -28,6 +28,7 @@ class Graph {
   void printBfsPath(int start, int end) {
   }
   
+  // use bfs.
   vector<int> getShortestDistanceToAllNodes(int start) {
   }
   
