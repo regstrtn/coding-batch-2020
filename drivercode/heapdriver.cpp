@@ -7,19 +7,49 @@ using namespace std;
 // Always start from position 1. 
 class minHeap {
   public: 
+  
+  int capacity; 
+  // Due to our hack. size = index of last element in heap. 
   int size; 
-  vector<int> v; 
+  // Initially this vector will be filled with elements by the caller. 
+  // Start filling from index 1; 
+  vector<int> arr;  
   
-  minHeap(size) {
-    v.resize(size+1); 
+  minHeap(capacity) {
+    this->capacity = capacity. 
+    arr.resize(capacity+1); 
   }
   
-  minHeap(vector<int> inp) {
-    size = inp.size(); 
-    v.push_back(-1); 
-    for(int i = 0; i<size; i++) {
-      v.push_back(inp[i]); 
+  // Start calling bubbleDown on every index starting from size/2 to 1. Why? 
+  void minHeapify() {
+    
   }
+  
+  // Save first element in temp. Then swap first element with arr[size]. 
+  // Reduce size by 1. Call bubble down on arr[0]. Return temp. 
+  int extractMin() {
+    
+  }
+  
+  // The following three conditions are only true if you fill from index 1; 
+  int parent(int i) {
+    return i/2; 
+  }
+  
+  int left(int i) {
+    return 2*i; 
+  }
+  
+  int right (int i){
+    return 2*i + 1; 
+  }
+  
+  void bubbleUp(int i) {
+  }
+  
+  void bubbleDown(int i) {
+  }
+  
   
   
 };
