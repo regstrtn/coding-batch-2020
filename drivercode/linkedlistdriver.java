@@ -140,7 +140,7 @@ public class Main {
 			temp = temp.next;
 		}
 		int len2 = 0;
-		Node temp = head2;
+		temp = head2;
 		while (temp != null) {
 			len2++;
 			temp = temp.next;
@@ -159,7 +159,7 @@ public class Main {
 		/*
 		 * if(head1 == null && head2 == null){ return true; } else { return false; }
 		 */
-
+		return true;
 	}
 
 	// K = 1 means delete last node.
