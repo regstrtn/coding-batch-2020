@@ -3,6 +3,7 @@
 // Write include statements. 
 #include <iostream>
 #include <string> 
+#include<stdlib.h>
 #include <vector>
 
 using namespace std;
@@ -29,6 +30,14 @@ void printList(Node *head) {
 
 // Return an array of random integers of the given size. 
 vector<int> generateRandomArray(int size) {
+//   	vector<int> v(size, 0); 
+// 	const int MAX_VALUE = size*10;
+// 	int i = 0; 
+// 	for(i=0;i<size;i++) {
+// 		// We don't want any zero values in arrays. 
+// 		v[i] = rand()%MAX_VALUE + 1; 
+// 	}
+
   return vector<int>(); 
 }
 
