@@ -66,6 +66,11 @@ TreeNode * findPredecessor(TreeNode * root) {
   return NULL;
 }
 
+// Return the lowest common ancestor. 
+TreeNode * lowestCommonAncestor(TreeNode * root, int val1, int val2) {
+  
+}
+
 // First generate random array. Then build this tree by calling insert() on each element of array. 
 TreeNode * buildTree(vector<int> & v) {
   // Call insert() repeatedly to build the tree.
