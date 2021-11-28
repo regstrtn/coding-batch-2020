@@ -40,6 +40,7 @@ class Graph {
   void dfsTree(int start) {
   }
   
+  // OPTIONAL. YOU CAN IGNORE THIS IF YOU WANT. 
   // Solve using dfs (or any other method you know). 
   bool isCyclic() {
   }
