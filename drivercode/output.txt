@@ -2,3 +2,27 @@
 1 2
 2 3
 3 4
+Distance of all nodes from 0
+0 0 = 0
+0 1 = 1
+0 2 = 2
+0 3 = 3
+0 4 = 4
+4 -> 3 -> 2 -> 1 -> 0
+Topological Sorting
+3 0 2 4 5 1 
+Shortest Path from 0 to 0
+0
+Shortest Path from 0 to 1
+1 -> 0
+Shortest Path from 0 to 2
+2 -> 1 -> 0
+Shortest Path from 0 to 3
+3 -> 1 -> 0
+Shortest Path from 0 to 4
+4 -> 2 -> 1 -> 0
+Distance from 0 to 0 = 0
+Distance from 0 to 1 = 2
+Distance from 0 to 2 = 1
+Distance from 0 to 3 = -1
+Distance from 0 to 4 = 4
